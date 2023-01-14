@@ -208,13 +208,14 @@ header {
 
 /*****_____ Some Facts Section Styles _____*****/
 
-.some-facts > p {
+.some-facts>p {
     margin: 25px 0;
 }
 
 .facts {
     display: flex;
     justify-content: space-around;
+    margin: 70px 0;
 }
 
 .fact {
@@ -239,4 +240,48 @@ header {
 .fact-content p {
     font-size: 20px;
     font-weight: 600;
+}
+
+
+/*****_____ Sponsors Section Styles _____*****/
+.sponsors {
+    padding: 100px 0;
+}
+
+.sponsor-dsc {
+    text-align: center;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+.sponsor-dsc p {
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.sponsor-logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sponsor-logo img {
+    filter: grayscale(100%);
+}
+
+
+/*****_____ Footer Section Styles _____*****/
+footer {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+}
+
+.copyright {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 20px;
+    padding: 30px;
+    color: var(--dark-two);
 }
