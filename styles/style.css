@@ -207,8 +207,11 @@ header {
 
 
 /*****_____ Some Facts Section Styles _____*****/
+.fact-intro {
+    max-width: 542px;
+}
 
-.some-facts>p {
+.fact-intro p {
     margin: 25px 0;
 }
 
@@ -266,6 +269,7 @@ header {
 
 .sponsor-logo img {
     filter: grayscale(100%);
+    max-width: 200px;
 }
 
 
@@ -284,4 +288,43 @@ footer p {
     font-size: 20px;
     padding: 30px;
     color: var(--dark-two);
+}
+
+
+/*---------------------------
+_____ Responsive Styles _____
+-----------------------------*/
+
+
+/*****_____ Mobile Devices _____*****/
+@media only screen and (max-width: 576px) {
+    .menu {
+        display: none;
+    }
+    .features {
+        flex-direction: column;
+    }
+    .feature-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .features-two {
+        flex-direction: column;
+    }
+    .architect {
+        margin-top: -30px;
+    }
+    .mega-button {
+        top: -170px;
+        left: 0;
+    }
+    .facts {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .sponsor-logo {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
 }
