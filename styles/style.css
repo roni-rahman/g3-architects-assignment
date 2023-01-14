@@ -20,9 +20,9 @@ body {
 }
 
 .container {
-    max-width: 1460px;
+    max-width: 1470px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 h1 {
@@ -301,30 +301,83 @@ _____ Responsive Styles _____
     .menu {
         display: none;
     }
+
     .features {
         flex-direction: column;
     }
+
     .feature-img {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .features-two {
         flex-direction: column;
     }
+
     .architect {
         margin-top: -30px;
     }
+
     .mega-button {
         top: -170px;
         left: 0;
     }
+
     .facts {
         flex-direction: column;
         gap: 30px;
         align-items: center;
     }
+
     .sponsor-logo {
         flex-direction: column;
         gap: 30px;
         align-items: center;
+    }
+}
+
+
+/*****_____ Tablet Devices _____*****/
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .feature-img {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .features-two {
+        flex-direction: column;
+    }
+
+    .features_love {
+        margin: 0 auto;
+    }
+
+    .architect {
+        margin-top: -30px;
+    }
+
+    .mega-button {
+        top: -160px;
+        left: 0;
+    }
+
+    .facts {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .fact-intro {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .sponsor-logo {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
     }
 }
