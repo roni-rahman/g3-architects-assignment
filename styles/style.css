@@ -204,3 +204,39 @@ header {
     font-size: 25px;
     font-weight: 500;
 }
+
+
+/*****_____ Some Facts Section Styles _____*****/
+
+.some-facts > p {
+    margin: 25px 0;
+}
+
+.facts {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 242px;
+    width: 242px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+.fact-content {
+    text-align: center;
+}
+
+.fact-content h2 {
+    color: var(--dark-two);
+    margin-top: 10px;
+}
+
+.fact-content p {
+    font-size: 20px;
+    font-weight: 600;
+}
