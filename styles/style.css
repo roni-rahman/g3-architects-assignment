@@ -59,14 +59,21 @@ li {
     list-style: none;
 }
 
-.primary-btn {
+.btn {
     color: #ffffff;
     background-color: var(--primary-color);
     border-radius: 8px;
-    padding: 20px 30px;
     border: none;
+}
+
+.primary-btn {
+    padding: 20px 30px;
     font-size: 20px;
     font-weight: 600;
+}
+
+.big-btn {
+    padding: 40px 50px;
 }
 
 header {
@@ -177,4 +184,23 @@ header {
 .architect {
     margin-top: -100px;
     object-fit: contain;
+}
+
+
+/*****_____ Mega Button Styles _____*****/
+.mega-button {
+    text-align: center;
+    position: relative;
+    top: -200px;
+    left: 80px;
+}
+
+.btn-line-one {
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.btn-line-two {
+    font-size: 25px;
+    font-weight: 500;
 }
