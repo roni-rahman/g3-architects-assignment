@@ -20,9 +20,9 @@ body {
 }
 
 .container {
-    max-width: 1470px;
+    max-width: 1480px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 
 h1 {
@@ -87,7 +87,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 0;
+    padding: 50px 20px;
 }
 
 .menu>ul {
@@ -154,7 +154,7 @@ header {
     display: flex;
     justify-content: space-between;
     gap: 50px;
-    padding: 70px 0;
+    padding: 70px 20px;
 }
 
 .features_love {
@@ -229,6 +229,13 @@ header {
     width: 242px;
     border: 1px solid var(--primary-color);
     border-radius: 8px;
+    transition: box-shadow 0.5s linear, background-color 0.5s linear, transform 0.5s ease-in-out;
+}
+
+.fact:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.16);
+    transform: scale(1.1);
 }
 
 .fact-content {
@@ -248,7 +255,7 @@ header {
 
 /*****_____ Sponsors Section Styles _____*****/
 .sponsors {
-    padding: 100px 0;
+    padding: 100px 20px;
 }
 
 .sponsor-dsc {
@@ -298,8 +305,12 @@ _____ Responsive Styles _____
 
 /*****_____ Mobile Devices _____*****/
 @media only screen and (max-width: 576px) {
+    .menu-bar {
+        flex-direction: column;
+    }
+
     .menu {
-        display: none;
+        margin-top: 20px;
     }
 
     .features {
